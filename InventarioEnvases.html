@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="estilos/InventarioEnvases.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <title>Inventario de Envases Terminados - StockPro</title>
+  <link rel="icon" type="image/x-icon" href="img/Cubo.ico">
+  
+</head>
+<body>
+  <div class="container">
+    <a href="Index.html" class="btn-floating btn-large waves-effect waves-light "><i class="material-icons">home</i></a>
+    <img class="logo" src="img/StockPro.png" alt="Logo StockPro">
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="header">
+    <h6>Inventario de Envases Terminados</h6>
+  </div>
+    
+    <input type="text" id="searchInput" placeholder="Buscar...">
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Referencia</th>
+          <th>Color</th>
+          <th>Bodega</th>
+          <th>Cantidad Reservada</th>
+          <th>Cantidad Disponible</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>1000 ml plano</td>
+          <td>Cristal</td>
+          <td>Bodega A</td>
+          <td>2000</td>
+          <td>8000</td>
+          <td>
+            <a class="btn-edit btn-flat waves-effect waves-light">Editar</a>
+            <a class="btn-delete btn-flat waves-effect waves-light">Eliminar</a>
+          </td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>500 ml plano</td>
+          <td>Cristal</td>
+          <td>Bodega A</td>
+          <td>1000</td>
+          <td>6000</td>
+          <td>
+            <a class="btn-edit btn-flat waves-effect waves-green">Editar</a>
+            <a class="btn-delete btn-flat waves-effect waves-red">Eliminar</a>
+          </td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>960 ml Bala</td>
+            <td>Azul</td>
+            <td>Bodega B</td>
+            <td>1500</td>
+            <td>6000</td>
+            <td>
+             <a class="btn-edit btn-flat waves-effect waves-green">Editar</a>
+            <a class="btn-delete btn-flat waves-effect waves-red">Eliminar</a>
+         </td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>1000 ml Agua</td>
+            <td>Azul</td>
+            <td>Bodega A</td>
+            <td>10000</td>
+            <td>0</td>
+            <td>
+                <a class="btn-edit btn-flat waves-effect waves-green">Editar</a>
+                <a class="btn-delete btn-flat waves-effect waves-red">Eliminar</a>
+              </td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>300 Ml Hit</td>
+            <td>Cristal</td>
+            <td>Bodega A</td>
+            <td>1000</td>
+            <td>6000</td>
+            <td>
+                <a class="btn-edit btn-flat waves-effect waves-green">Editar</a>
+                <a class="btn-delete btn-flat waves-effect waves-red">Eliminar</a>
+              </td>
+          </tr>
+        <!-- Agregar más ejemplos de envases terminados aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

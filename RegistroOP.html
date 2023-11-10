@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <link rel="stylesheet" href="estilos/RegistroOP.css">
+  <title>Registro de Órdenes de Producción - StockPro</title>
+  <link rel="icon" type="image/x-icon" href="img/Cubo.ico">
+</head>
+<body>
+  <script src="RegistroOP.js"></script>
+  <div class="container">
+    <a href="Index.html" class="btn-floating btn-large waves-effect waves-light "><i class="material-icons">home</i></a>
+    <img class="logo" src="img/StockPro.png" alt="Logo StockPro">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h5>Registro de Órdenes de Producción</h5>
+
+    <form action="#">
+      <div class="input-field">
+        <input type="text" id="cliente" name="cliente" required>
+        <label for="cliente">Cliente</label>
+      </div>
+      <div class="input-field">
+        <input type="number" id="cantidad" name="cantidad" required>
+        <label for="cantidad">Cantidad a Producir</label>
+      </div>
+      <p>
+        <label>
+          <input class="with-gap" name="tipo" type="radio" value="envase" checked>
+          <span>Envase</span>
+        </label>
+        <label>
+          <input class="with-gap" name="tipo" type="radio" value="pellet">
+          <span>Pellet</span>
+        </label>
+      </p>
+      <div id="envaseFields">
+        <div class="input-field">
+          <input type="text" id="referenciaEnvase" name="referenciaEnvase">
+          <label for="referenciaEnvase">Referencia de Envase</label>
+        </div>
+        <div class="input-field">
+          <input type="number" id="gramaje" name="gramaje">
+          <label for="gramaje">Gramaje de Preforma</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="color" name="color">
+          <label for="color">Color</label>
+        </div>
+        <div class="input-field">
+          <select id="maquinaEnvase" name="maquinaEnvase">
+            <option value="Máquina" disabled selected>Seleccionar Máquina</option>
+            <option value="SOP 1">SOP 1</option>
+            <option value="SOP 2">SOP 2</option>
+            <option value="SOP 3">SOP 3</option>
+            <option value="SOP 4">SOP 4</option>
+          </select>
+          <label>Máquina Asignada</label>
+        </div>
+      </div>
+      <div id="pelletFields" style="display: none;">
+        <div class="input-field">
+          <select id="referenciaPellet" name="referenciaPellet">
+            <option value="" disabled selected>Seleccionar Referencia</option>
+            <option value="PET">PET</option>
+            <option value="PVC">PVC</option>
+            <option value="POLICARBONATO">Policarbonato</option>
+          </select>
+          <label>Referencia de Pellet</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="colorPellet" name="colorPellet">
+          <label for="colorPellet">Color</label>
+        </div>
+        <div class="input-field">
+          <select id="maquinaPellet" name="maquinaPellet">
+            <option value="" disabled selected>Seleccionar Máquina</option>
+            <option value="PELET 1">PELET 1</option>
+            <option value="PELET 2">PELET 2</option>
+          </select>
+          <label>Máquina Asignada</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action" id="registrarOrden">Registrar Órden
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

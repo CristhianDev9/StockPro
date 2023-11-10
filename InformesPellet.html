@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <link rel="stylesheet" href="estilos/InformeEnvases.css">
+  <title>Informes de Producción de Pellet - StockPro</title>
+  <link rel="icon" type="image/x-icon" href="img/Cubo.ico">
+ 
+</head>
+<body>
+  <div class="container">
+    <a href="Index.html" class="btn-floating btn-large waves-effect waves-light "><i class="material-icons">home</i></a>
+    <img class="logo" src="img/StockPro.png" alt="Logo StockPro">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h5>Informes de Producción de Pellet</h5>
+    
+    <div class="row">
+      <div class="input-field col s6">
+        <input type="text" id="searchInput" placeholder="Buscar...">
+      </div>
+    </div>
+    
+    <table class="striped bordered">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Orden de Producción</th>
+          <th>Cliente</th>
+          <th>Turno</th>
+          <th>Operario</th>
+          <th>Cantidad Producida (Kg)</th>
+          <th>Cantidad de Desperdicio (Kg)</th>
+          <th>Observaciones</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023-08-01</td>
+          <td>OP023</td>
+          <td>Universal</td>
+          <td>1</td>
+          <td>Operario 4</td>
+          <td>800</td>
+          <td>15</td>
+          <td>Observación 1</td>
+          <td>
+            <a  class="btn-edit btn-flat waves-effect waves green">Ver</a>
+            <a class="btn-edit btn-flat waves-effect waves blue">Editar</a>
+            <a  class="btn-delete btn-flat waves-effect waves red">Borrar</a>
+          </td>
+        </tr>
+        <tr>
+            <td>2023-08-01</td>
+            <td>OP023</td>
+            <td>Universal</td>
+            <td>2</td>
+            <td>Operario </td>
+            <td>700</td>
+            <td>87</td>
+            <td>Observación 2</td>
+            <td>
+              <a  class="btn-edit btn-flat waves-effect waves waves green">Ver</a>
+              <a class="btn-edit btn-flat waves-effect waves blue">Editar</a>
+              <a  class="btn-delete btn-flat waves-effect waves red">Borrar</a>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="estilos/PanelDeControl.css"/>
+  <title>Panel de Control - StockPro</title>
+  <link rel="icon" type="image/x-icon" href="img/Cubo.ico">
+ 
+
+   
+</head>
+<body>
+  <script src="Index.js"></script>
+    <div class="logo">
+    <img src="img/StockPro.png" alt="Logo StockPro">
+  
+    <h6>Panel de Control</h6>
+    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" id="notificaciones">notifications</i></a>
+  </div>
+    <div id="notificacionesBox" class="notificaciones-box">
+      
+      <p>No tienes notificaciónes.</p>
+    </div>
+    <br><br><br>
+    <div class="container">
+    <ul class="collapsible">
+      <!-- Sección de Usuarios -->
+      <li>
+        <div class="collapsible-header">Usuarios<i class="material-icons"></i></div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="RegistroUsario.html">Añadir Usuarios</a></li>
+            <li><a href="GestiónUsuarios.html">Gestionar Usuarios</a></li>
+          </ul>
+        </div>
+      </li>
+      
+      <!-- Sección de Inventarios -->
+      <li>
+        <div class="collapsible-header">Inventarios<i class="material-icons"></i></div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="Preforma.html">Inventario de Preformas</a></li>
+            <li><a href="InventarioEnvases.html">Inventario de Envases</a></li>
+            <li><a href="InvantarioDesperdicio.html">Inventario de Material para Reciclar</a></li>
+            <li><a href="InventarioPellet.html">Inventario de Pellet</a></li>
+          </ul>
+        </div>
+      </li>
+      
+      <!-- Sección de Órdenes de Producción -->
+      <li>
+        <div class="collapsible-header">Órdenes de Producción<i class="material-icons"></i></div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="RegistroOP.html">Crear Orden de Producción</a></li>
+            <li><a href="GestiónOP.html">Gestionar Órdenes de Producción</a></li>
+          </ul>
+        </div>
+      </li>
+    
+        <!-- Sección de Informes-->
+        <li>
+          <div class="collapsible-header">Informes<i class="material-icons"></i></div>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="InformesEnvase.html">Informes de producción de envase</a></li>
+              <li><a href="InformesPellet.html">Informes de producción Pellet</a></li>
+            </ul> 
+          </div>
+        </li>
+      </ul>
+    
+    <a href="login.html" class="btn waves-effect waves-light red">Cerrar Sesión</a>
+  </div>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

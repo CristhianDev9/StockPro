@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="estilos/InventarioPellet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <title>Inventario de Preformas</title>
+  <link rel="icon" type="image/x-icon" href="img/Cubo.ico">
+
+  
+</head>
+<body>
+  <div class="container">
+    <a href="Index.html" class="btn-floating btn-large waves-effect waves-light "><i class="material-icons">home</i></a>
+    <img class="logo" src="img/StockPro.png" alt="Logo de la Empresa">
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h6>Inventario actual de Pellet</h6>
+    <table class="striped bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Código</th>
+          <th>Referencia</th>
+          <th>Color</th>
+          <th>Bodega</th>
+          <th>Cantidad(kg)</th>
+          <th>Cantidad Reservada(kg)</th>
+          <th>Cantidad Disponible(kg)</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>PEL03</td>
+          <td>PET</td>
+          <td>Cristal</td>
+          <td>Bodega A</td>
+          <td>10000</td>
+          <td>5600</td>
+          <td>4400</td>
+          <td>
+            <a class="btn-edit btn-flat waves-effect waves-green">Editar</a>
+            <a class="btn-delete btn-flat waves-effect waves-red">Eliminar</a>
+          </td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>PEL02</td>
+            <td>PVC</td>
+            <td>Verde</td>
+            <td>Bodega A</td>
+            <td>11000</td>
+            <td>9000</td>
+            <td>2000</td>
+            <td>
+              <a class="btn-edit btn-flat waves-effect waves-teal ">  Editar  </a>
+              <a class="btn-delete btn-flat waves-effect waves-red ">Eliminar</a>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

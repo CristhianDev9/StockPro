@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <link rel="stylesheet" href="estilos/registroEnvase.css"/>
+  <title>Registro de Producción de Envase - StockPro</title>
+  <link rel="icon" type="image/x-icon" href="img/Cubo.ico">
+ 
+</head>
+<body>
+  <div class="container">
+    <a href="Index2.html" class="btn-floating btn-large waves-effect waves-light "><i class="material-icons">home</i></a>
+    <div class="logo">
+      <img src="img/StockPro.png" alt="Logo StockPro">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h6>Registro de Producción de Envase</h6>
+    <br>
+    <br>
+    <br>
+    <form action="#">
+      <div class="input-field">
+        <select id="operario">
+          <option value="" disabled selected>Seleccione un operario</option>
+          <option value="operario1">Operario 1</option>
+          <option value="operario2">Operario 2</option>
+          <!-- Otras opciones de operarios -->
+        </select>
+        <label>Operario</label>
+      </div>
+      
+      <div class="input-field">
+        <select id="turno">
+          <option value="" disabled selected>Seleccione un turno</option>
+          <option value="1">Turno 1</option>
+          <option value="2">Turno 2</option>
+          <option value="3">Turno 3</option>
+          <option value="4">Turno 4</option>
+          <option value="5">Turno 5</option>
+        </select>
+        <label>Turno</label>
+      </div>
+      
+      <div class="input-field">
+        <select id="maquina">
+          <option value="" disabled selected>Seleccione una máquina</option>
+          <option value="sop1">SOP 1</option>
+          <option value="sop2">SOP 2</option>
+          <option value="sop3">SOP 3</option>
+          <option value="sop4">SOP 4</option>
+        </select>
+        <label>Máquina</label>
+      </div>
+      
+      <div class="input-field">
+        <input type="number" id="cantidadProducida" name="cantidadProducida">
+        <label for="cantidadProducida">Cantidad Producida</label>
+      </div>
+      
+      <div class="input-field">
+        <input type="number" id="cantidadDesperdicio" name="cantidadDesperdicio">
+        <label for="cantidadDesperdicio">Cantidad de Desperdicio</label>
+      </div>
+      
+      <div class="input-field">
+        <textarea id="observaciones" class="materialize-textarea"></textarea>
+        <label for="observaciones">Observaciones</label>
+      </div>
+      
+      <button class="btn waves-effect waves-light" type="submit" name="action">Registrar Producción
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+  </script>
+</body>
+</html>
